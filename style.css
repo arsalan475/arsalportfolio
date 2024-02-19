@@ -242,13 +242,13 @@ position: relative;
 .project-container{
     border-radius: 5px;
     overflow: hidden;
-    width: 20rem;
+    width: 25rem;
     display:flex;
     flex-direction: column;
     gap:2rem;
     box-shadow: 0 0 10px grey;
     margin-top: 4rem;
-    padding: 1rem .5rem;
+    padding: 1rem 
     
     
 }
@@ -276,7 +276,7 @@ margin-left: 1rem;
 .contact-container{
  margin: 0 auto;
     width:90%;
-
+height: 85%;
     display: flex;
     flex-direction: column;
     padding: 7rem 0;
@@ -287,7 +287,7 @@ margin-left: 1rem;
 }
 .contact-section{
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
 justify-content: start;
 
@@ -314,7 +314,8 @@ justify-content: start;
 display: flex;
 justify-content: center;
 width: 50%;
-background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
+/* background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701); */
+border: 5px solid #FFB701;
 border-radius: 5px;
 }
 
@@ -328,12 +329,6 @@ border-radius: 5px;
     text-transform: capitalize;
 }
 
-.contact-right-heading{
-    font-size: 2.6vw;
-    text-transform: capitalize;
-    color:rgb(50, 47, 43);
-    text-shadow:none;
-}
 
 .name-email-box{
     width: 100%;
