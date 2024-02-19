@@ -128,11 +128,17 @@ hr{
 
 .home-section{
     width:90%;
+    height: 100vh;
    padding: 4rem 0  ;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+ position: relative;
+    flex-direction: column;
 
+}
+
+.sub-container{
+    display: flex;
 }
 
 .home-heading{
@@ -149,12 +155,13 @@ hr{
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+    padding-top: 8rem;
 
 
 }
 
 .heading-main span{
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 1;
     
 }
@@ -186,7 +193,7 @@ hr{
 }
 
 .home-right img{
-    width: 100%;
+    width: 90%;
     
 }
 
@@ -195,6 +202,8 @@ hr{
     margin-top: 3vw;
     display: flex;
     gap: 2rem;
+    position: absolute;
+    top: 55%;
 
 }
 
@@ -218,13 +227,14 @@ position: relative;
     font-weight: 700;
     letter-spacing: .5px;
 border: none;
-position: relative;
+
 }
 
 .portfolio{
     width: 90%;
     margin: 0 auto;
    padding: 7rem 0;
+   text-align: center;
 }
 
 .portfolio-container{
@@ -232,6 +242,7 @@ position: relative;
     display: flex;
     flex-wrap: wrap;
     column-gap: 4rem;
+    justify-content: center;
     
 }
 
@@ -267,9 +278,11 @@ margin-left: 1rem;
     color: #8C8C8E;
 }
 .project-exp-btn{
+    text-align: center;
+    width: 100%;
     padding: .5rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    
     background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
 }
 
@@ -435,11 +448,17 @@ background: none;
     .link-container{
         display: none;
     }
-    /* .home-section{
-        flex-direction: column;
-        justify-content: center;
+     .home-section{
+        height: 90vh;
         align-items: center;
-    } */
+        gap: 2rem;
+    } 
+
+    .sub-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
     .home-heading{
         /* font-size: 1.3rem; */
         width: 90%;
@@ -457,7 +476,7 @@ background: none;
     .heading-primary{
        
         font-size: 1rem;
-        word-spacing: 2px;
+      
     }
 
     .nav{
@@ -472,10 +491,7 @@ background: none;
         
     }
 
-    .home-right img{
-align-items: center;
-    }
-    
+ 
 
     .contact-container{height: 60vh;}
 
@@ -506,16 +522,13 @@ align-items: center;
 align-items: center;
     }
 
-    .heading-main span{
-        line-height: .5;
-     }
-
+   
      .contact-section{
         height: auto;
      }
 
      .contact-left{
-        padding:3rem 1rem;
+        padding:3rem 1.5rem;
         gap: 2rem;
     
      }
@@ -545,7 +558,7 @@ font-size: 2rem;
 
         .contact-container{
           
-               width:80%;
+               width:90%;
             
                padding-top: 7rem;
                height: auto;
