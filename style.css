@@ -1,0 +1,561 @@
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.hide{
+    transform: translateY(20px);
+    opacity: 0;
+    
+}
+
+.moveup{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 2s;
+}
+
+.circle{
+    width: 40px;
+    height:40px;
+    background:linear-gradient(60deg, rgb(255, 218, 33),#ffb7016c);
+    border-radius:100px;
+    position: absolute;
+
+   
+}
+
+
+.dot{
+    transition: all .1s ease;
+    width: 10px;
+    height:10px;
+    background: #333;
+    z-index: 1;
+}
+
+
+
+
+
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 5rem;
+    padding: 0 5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-bottom: 3px solid #FFB701;
+
+    position: relative;
+   
+    
+}
+
+.sticky{
+    position: fixed;
+z-index: 1;
+background-color: white;
+}
+
+.logo-box .logo{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.link-container{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.link-items{
+    list-style-type: none;
+  
+}
+
+.link-items a:link,:visited{
+    color: #333;
+    font-weight: 600;
+    text-decoration:none;
+    letter-spacing: 1px;
+    transition: opacity .2s;
+}
+
+button.sign-in-btn{
+    background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    width: auto;
+}
+
+button.sign-in-btn{
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+hr{
+    border: 2px solid #FFB701;
+
+}
+
+.home-section{
+    width:90%;
+   padding: 4rem 0  ;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.home-heading{
+    /* line-height: 2rem; */
+ 
+    width: 50%;
+    text-transform: capitalize;
+   
+}
+
+.heading-main{
+    margin-bottom: 2vw;;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+
+}
+
+.heading-main span{
+    font-size: 5vw;
+    line-height: 1;
+    
+}
+
+.name{
+    color:#FFB701
+}
+
+
+.profession{
+   
+    color:#FFB701;
+    font-size: 4rem;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.heading-primary{
+    font-weight: 500;
+    color: #333;
+    width: 90%;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+}
+
+.home-right{
+    width: 50%;
+}
+
+.home-right img{
+    width: 100%;
+    
+}
+
+
+.btn-container{
+    margin-top: 3vw;
+    display: flex;
+    gap: 2rem;
+
+}
+
+button{
+    padding: 1.2rem 1.5rem;
+    width: 13rem;
+    border: none;
+    background:none;
+    border: 1px solid #97939354;
+    border-radius: 5px;
+    color:#3C3B40;
+    font-weight: 700;
+    letter-spacing: .2px;
+position: relative;
+
+}
+
+.cta{
+    background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701);;
+    color:#3C3B40;
+    font-weight: 700;
+    letter-spacing: .5px;
+border: none;
+position: relative;
+}
+
+.portfolio{
+    width: 90%;
+    margin: 0 auto;
+   padding: 7rem 0;
+}
+
+.portfolio-container{
+  
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    
+}
+
+.portfolio-heading{
+    font-size: 5vw;
+}
+
+.project-container{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 20rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    box-shadow: 0 0 10px grey;
+    margin-top: 4rem;
+    padding: 1rem .5rem;
+    
+    
+}
+
+
+
+.portfolio-container .project-heading{
+font-size: 2.2rem;
+margin-left: 1rem;
+}
+
+.portfolio-container p{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    color: #8C8C8E;
+}
+.project-exp-btn{
+    padding: .5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
+}
+
+.contact-container{
+ margin: 0 auto;
+    width:90%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0;
+    
+    
+
+
+}
+.contact-section{
+    width: 100%;
+    height: 80%;
+    display: flex;
+justify-content: start;
+
+    
+}
+
+.contact-left,.contact-right{
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    gap: 4rem;
+
+
+}
+
+.contact-left{
+    
+    box-shadow: 0 0 20px grey;
+    border-radius: 5px;
+   
+    width: 50%;
+}
+.contact-right{
+display: flex;
+justify-content: center;
+width: 50%;
+background:linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
+border-radius: 5px;
+}
+
+.contact-right img{
+    width: 100%;
+}
+
+.contact-left-heading{
+    font-size: 3.5rem;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.contact-right-heading{
+    font-size: 2.6vw;
+    text-transform: capitalize;
+    color:rgb(50, 47, 43);
+    text-shadow:none;
+}
+
+.name-email-box{
+    width: 100%;
+    height: 4rem;
+    
+    display: flex;
+    gap: 1rem;
+}
+
+#name,#email{
+    width: 40%;
+    padding-left:1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+    background: none;
+    border: 1px solid rgb(54, 50, 50);
+}
+
+.subject-box{
+    width: 100%;
+    display:flex;
+    height: 4rem;
+    position: relative;
+    
+}
+
+#subject{
+    width: 82%;
+    padding-left:1rem;
+    font-size: 1.2rem;
+    position: relative;
+    background: none;
+    font-weight: 700;
+    border: 1px solid lightgrey;
+}
+
+
+#textarea{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    position: relative;
+background: none;
+    font-weight: 700;
+    border: 1px solid lightgrey;
+    resize: none;
+    width: 83%;
+    height: 10rem;
+}
+.send{
+    background: linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
+    
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+
+
+
+.footer-container{
+    width: 100%;
+    height: 6rem;
+    background :linear-gradient(60deg, rgb(255, 218, 33),#FFB701);
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    word-spacing: 1px;
+    font-weight: 700;
+}
+
+.social-media-icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.author-container .name{
+
+        color:white;
+        text-shadow: 0 0 5px #333;
+    }
+
+.author-container .copy{
+
+    color:#121212b6;
+    text-shadow: 0 0 5px white;
+}
+
+
+
+@media (max-width:600px) {
+    :root{
+        font-size: 40%;
+    }
+
+
+
+    .link-container{
+        display: none;
+    }
+    /* .home-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    .home-heading{
+        /* font-size: 1.3rem; */
+        width: 90%;
+      
+    }
+
+ 
+
+    
+    .profession{
+        justify-content: start;
+        font-size: 2rem;
+    }
+
+    .heading-primary{
+       
+        font-size: 1rem;
+        word-spacing: 2px;
+    }
+
+    .nav{
+        width: 100%;
+
+    }
+
+    .home-right{
+        /* display: none; */
+        width: 50%;
+      
+        
+    }
+
+    .home-right img{
+align-items: center;
+    }
+    
+
+    .contact-container{height: 60vh;}
+
+    button{font-size: 1rem;
+    padding: .6rem .10rem;}
+
+.contact-right{
+    width: 50%;
+}
+
+
+    .circle{display: none;}
+}
+
+
+
+
+
+@media (max-width:400px) {
+    .home-right{
+        /* display: none; */
+        width: 50%;
+        height: 15rem;
+        
+    }
+
+    .home-right img{
+align-items: center;
+    }
+
+    .heading-main span{
+        line-height: .5;
+     }
+
+     .contact-section{
+        height: auto;
+     }
+
+     .contact-left{
+        padding:3rem 1rem;
+        gap: 2rem;
+    
+     }
+
+     .contact-left h1{
+font-size: 2rem;
+     }
+
+     /* .portfolio-container{
+        width: 100%;
+     }
+
+        .portfolio{
+      
+            width: 100%;
+
+        
+        } */
+    
+
+        .project-container{
+            width: 90%;
+
+        }
+
+
+
+        .contact-container{
+          
+               width:80%;
+            
+               padding-top: 7rem;
+               height: auto;
+           
+           }
+
+         
+
+}
